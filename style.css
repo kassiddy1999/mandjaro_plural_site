@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #f2f2f2;
+}
+
+a{
+    text-decoration: none;
+    
+}
+
+html {
+    font-family: "Montserrat", sans-serif;
+    background: #181818;
+}
+
+#wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+#left {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    max-width: 600px;
+    margin: .5rem auto;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;  
+}
+/* Sign In */
+#signIn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    padding-bottom: 1rem;
+}
+
+#signIn .brand {
+    margin-bottom: 1rem;
+}
+
+#signIn .brand span {
+    color: crimson;
+}
+#signIn form {
+    width: 80%;
+}
+
+#signIn label{
+    font-size: 0.9rem;
+    line-height: 2rem;
+    font-weight: 500;
+    letter-spacing: .2rem;
+    text-transform: capitalize;
+    pointer-events: none;
+  }
+  
+  #signIn input{
+    margin-bottom: 30px;
+    width: 100%;
+    border-radius: 2px;
+    background: transparent;
+    border-bottom:1px solid #fff!important;
+    outline: none;
+    border: none;
+    padding: 10px 0;
+    line-height: 1.3rem;
+    }
+
+    
+#signIn .primary-btn {
+    width: 100%;
+    padding: 10px 30px;
+    display: inline-block;
+    letter-spacing: .1rem;
+    background-color: crimson;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 5px;
+    transition: .5s ease all;
+  }
+
+  #signIn .primary-btn:hover {
+    background: rgb(248, 171, 184);
+    color: crimson;
+  }
+  
+#signIn .secondary-btn,
+.or,
+.links{
+  width: 60%;
+}
+
+#signIn .links a {
+    color: #f2f2f2;
+    text-decoration: none;
+    margin: 1rem 0;
+    display: block;
+    font-size: .9rem;
+    text-align: center;
+}
+
+#signIn .or{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1.2rem;
+    align-items: center;
+  }
+
+  #signIn .or .bar{
+    flex: auto;
+    border: none;
+    height: 1px;
+    background: #aaa;
+  }
+
+  #signIn .or span {
+    padding: 0 .5rem;
+  }
+/* End of Sign In */
+
+/* Footer */
+#main_footer p{
+    color: crimson;
+    text-align: center;
+    font-size: .9rem;
+    letter-spacing: .1rem;
+    /* max-width: 80%; */
+}
+/* End of Footer */
+
+#main_footer  a{
+    /* text-align: center; */
+    display: block;
+    margin-top: .2rem;
+}
+
+/* End of Left */
+
+/* Right */
+#right {
+    flex: 1;
+}
+
+#showcase {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background:linear-gradient(rgba(0,0,0,.9),rgba(0,0,0,0.7)), url('img/hero-bg.png') no-repeat center center / cover ;
+    position: relative;
+    height: 100vh;
+}
+
+#showcase .showcase-text{
+    width: 100%;
+    font-size: 3rem;
+    text-transform: capitalize;
+    color: #f2f2f2;
+    margin-bottom: 1.5rem;
+    letter-spacing: .2rem;
+    font-weight: 500;
+  }
+
+  #showcase .showcase-text strong {
+      color: crimson;
+  }
+
+#showcase .secondary-btn {
+    width: 60%;
+    margin-left: auto;
+}
+
+/* End of Right */
+
+/*button*/
+
+  .primary-btn:hover{
+    background-color: green;
+  }
+  
+  .secondary_btn{
+    padding: 0.7rem 1rem;
+    height: 2.7rem;
+    display: inline-block;
+    border: 1px solid #f4f4f4;
+    border-radius: 2px;
+    font-weight: 500;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    transition:all .5s;
+  }
+  .secondary_btn:hover{
+  border-color: crimson;
+  color: crimson;
+  }
+
+  
+/*media query*/
+@media(min-width: 1200px){
+    #left{
+      flex: 4;
+    }
+  
+    #right{
+      flex: 6;
+    }
+    #signin .logo {
+      margin-top: .5rem;
+    }
+  }
+  
+  @media (max-width:768px) {
+    body{
+      overflow: auto;
+    }
+    #right{
+      display: none;
+    }
+  #left{
+    justify-content: start;
+    margin-top: 4vh;
+  }
+  #signIn .logo{
+    margin-bottom: 2vh;
+  }
+  #signIn .text-input{
+    margin-bottom: 0.7rem;
+  }
+  
+  #main_footer{
+    padding: 1rem;
+  }
+  }
+
+
+  
